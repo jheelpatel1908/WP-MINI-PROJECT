@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html ,body{
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 15px;
+    width: 15px;
+    background-color: #bbff00;
+    border-radius: 50%;
+    position:fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #bbff005e;
+    border-radius: 50%;
+    position:fixed;
+    filter: blur(120px);
+    z-index: 9;
+}
+#nav{
+    
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 150px;
+    gap: 40px;
+    position: fixed;
+    z-index: 99;
+}
+#nav img{
+    height: 75px;
+}
+#nav h4{
+    font-weight: 500;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 0.5px #bbff00;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 23px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#page1 p{
+    font-size: 19px;
+    
+    width: 50%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3c3b3b;
+    border-radius: 15px;
+    z-index: 2000;
+  }
+  #myForm{
+    z-index: 2000;
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .form-container input[type="text"],
+  .form-container input[type="number"],
+  .form-container input[type="email"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #030303;
+    color: #030303;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 2000;
+  }
+  .form-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .form-container input[type="submit"]:hover {
+    background-color: #01fe0e;
+  }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        i {
+            font-family: 'FontAwesome'
+        }
+
+        .profile {
+            padding: 20px 50px;
+        }
+
+        ul {
+            position: relative;
+            top: 50%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+
+            float: left;
+        }
+
+        li a {
+            font-weight: bold;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropbtn:hover {
+            background-color: rgb(103, 11, 189);
+        }
+
+        .nav {
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+            background-color: rgb(107, 107, 107);
+            height: 10%;
+            margin: right;
+        }
+
+        .profile {
+            position: absolute;
+            top: 10%;
+            left: 0%;
+            background-color: #35f5db;
+            height: 90%;
+            width: 20%;
+        }
+
+        .image {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+
+        }
+
+        .dropbtn {
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .proimage {
+            position: inherit;
+            border-radius: 50%;
+            width: 300px;
+        }
+
+        .container {
+            position: inherit;
+            width: 100%;
+            background-color: #2e6dc0;
+            margin: 20px 0px;
+
+        }
+
+        .skills {
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #18154c;
+            width: 6%;
+            background-color: #35f5db;
+        }
+
+        .button {
+            background-color: #1c1a48;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 100px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .welcome {
+            position: absolute;
+            top: 10%;
+            left: 26%;
+            width: 49%;
+            height: 47.5%;
+            background: url('./welcome.jpg');
+            background-size: 100%;
+        }
+
+        .help {
+            position: absolute;
+            top: 60%;
+            background-color: #35f5db;
+            left: 26%;
+            height: 42.5%;
+            width: 24%;
+        }
+
+        .facemasks {
+            position: absolute;
+            top: 60%;
+            background-color:#35f5db;
+            left: 51%;
+            height: 42.5%;
+            width: 24%;
+        }
+
+        .poll {
+            position: absolute;
+            top: 10%;
+            background-color: #35f5db;
+            left: 76%;
+            height: 90%;
+            width: 24%;
+            padding: 10px 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 12%;
+        }
+
+        .poll-buttons {
+            background-color: #167bb9;
+            width: 80%;
+            margin: 10px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 30px;
+            color: white;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="image">
+            <img src="./The telegraph.png" alt="image" height="50px" width="300 px">
+        </div>
+        <ul>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#news">TIMELINE</a></li>
+            <button class="dropbtn">SOCIAL HUBS
+                <i class="fa fa-caret-down" style="color: green;"></i>
+            </button>
+            <button class="dropbtn">ROOMS
+                <i class="fa fa-caret-down" style="color: green;"></i>
+            </button>
+            <button class="dropbtn">FORUMS
+                <i class="fa fa-caret-down" style="color: green;"></i>
+            </button>
+            <button class="dropbtn">DIARIES
+                <i class="fa fa-caret-down" style="color: green;"></i>
+            </button>
+            <button class="dropbtn">SURVEYS
+                <i class="fa fa-caret-down" style="color: green;"></i>
+            </button>
+        </ul>
+    </div>
+    <div class="profile">
+        <div class="upper">
+            <img src="./house.jpg" alt="image" class="proimage">
+            <div style="color: white; font-size: 50px;">Jane Bloggs</div>
+            <div style="color: white; font-size: x-large;position: relative;top: 10px; font-weight: bold;">Level 2</div>
+            <div class="container">
+                <div class="skills">6%</div>
+            </div>
+            <button class="button">View your profile</button>
+        </div>
+        <hr color="white" style="height: 0.5px; margin: 25px 0px;">
+        <div style="color: white;font-weight: bold;font-size: xx-large;">Points</div>
+        <pre
+            style="color: white;font-weight: bold;font-size: x-large;position: relative;top: -10px;">Total Earned:                      55</pre>
+        <pre
+            style="color: white;font-weight: bold;font-size: x-large;position: relative;top: -20px;">Total Redeemed:                     0</pre>
+        <pre
+            style="color: white;font-weight: bold;font-size: x-large;position: relative;top: -30px;">Current Balance:                   55</pre>
+        <center style="margin: 100px 0px;">
+
+            <i class="fa fa-circle" style="color: white;"></i>
+            <i class="fa fa-circle-thin" style="color: white;"></i>
+        </center>
+    </div>
+    <div class="welcome">
+        <h1 style="color: white;position: relative;top: 30px;left: 30px;">Welcome to The Telegraph <br>Contributors
+            Panel </h1>
+        <p style="color: white;margin: 35px 30px;">Find out all about our exclusive online community</p>
+        <button class="button" style="position: relative;top: 40%;left: 30px;">Click here</button>
+    </div>
+    <div class="help">
+        <i class="fa fa-message-quote"></i>
+        <h1 style="color: white;position: relative;top: 30%;left: 10%;">Eat out to help out</h1>
+        <p style="color: white;position: relative;top: 28%;left: 10%;">Come and tell us your thoughts....</p>
+        <button class="button" style="position: relative;top: 40%;left: 30px;">Make a comment</button>
+    </div>
+    <div class="facemasks">
+        <i class="fa fa-message-quote"></i>
+        <h1 style="color: white;position: relative;top: 30%;left: 10%;">Facemasks</h1>
+        <p style="color: white;position: relative;top: 28%;left: 10%;">Come and tell us your thoughts....</p>
+        <button class="button" style="position: relative;top: 40%;left: 30px;">Make a comment</button>
+    </div>
+    <div class="poll">
+        <h1 style="color:white">Quick poll</h1>
+        <p style="color: white;font-size: xx-large;position: inherit;top: 5%;">If you are a student, do you <br>expect
+            to be able to return <br>home for Christmas?</p>
+        <div class="flex-container">
+            <button class="poll-buttons">Yes, and I wont <br>quarantine</button>
+            <button class="poll-buttons">Yes, but will have to <br>quarantine</button>
+            <button class="poll-buttons">No, its too risky</button>
+            <button class="poll-buttons">No, I am not able to</button>
+            <button class="poll-buttons">No, but wouldnt <br>anyway</button>
+            <button class="poll-buttons">I have not returned <br>to usniversity in <br>person this year</button>
+            <button class="poll-buttons">I am not a <br>student/Not <br>applicable</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
